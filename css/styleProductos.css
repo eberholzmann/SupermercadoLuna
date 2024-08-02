@@ -58,7 +58,9 @@ input[type="number"] {
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
-
+.totalcompra{
+    margin: 20px;
+}
 
 
 

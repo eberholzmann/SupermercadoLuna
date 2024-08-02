@@ -36,6 +36,10 @@ nav ul li a:hover {
     margin-right: 10px; /* Espacio entre elementos */
 }
 
+.datoscontacto{
+    margin-left: 50px;
+}
+
 section{
     margin: 50px;    
 }
