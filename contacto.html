@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/styleContacto.css">
+</head>
+<body>
+    <!--encabezado, comun a todas las paginas-->
+    <header>
+        <h1>Supermercado LUNA</h1>
+        <nav>
+        <ul class="listaHorizontal">
+            <li> <a href="./index.html"> Inicio</a></li>
+            <li> <a href="./productos.html"> Productos</a></li>
+            <li> <a href="./contacto.html"> Contacto </a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section>
+        <p>Nombre:</p>
+        <input type="text" id="nombre" required>
+        <p>Apellido:</p>
+        <input type="text" id="apellido">
+        <p>Email:</p>
+        <input type="text" id="email" required>
+        <p>Teléfono:</p>
+        <input type="text" id="telefono">
+        <!--Cuadro de texto de 5 filas-->
+        <p>Consulta:</p>
+        <textarea id="consulta" name="consulta" rows="5"></textarea>
+        <button id="btnEnviar">ENVIAR</button>
+    </section>
+  
+    <!--pie de pagina, comun a todas las paginas, compuesto de 2 div-->
+    <footer>
+        <div class="footerContenedor">
+            <h3>Supermercado LUNA</h3>
+            <p>Tu supermercado de confianza. Ofrecemos una amplia variedad de productos frescos y de calidad.</p>
+        </div>
+        <div class="footerAbajo">
+            <p>&copy; 2024 Supermercado LUNA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--Libreria para usar el save as-->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script type="text/javascript" src="./js/scriptcontacto.js"> </script>
+</body>
+</html>
