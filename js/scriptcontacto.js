@@ -54,4 +54,5 @@ btnEnviar.addEventListener("click", (e) => {
 
         alert('Su consulta fue enviada');
     }
+    
 })

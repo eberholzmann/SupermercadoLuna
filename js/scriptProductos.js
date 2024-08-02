@@ -15,6 +15,8 @@ document.querySelector("div button").addEventListener("click", ()=>{
 })
 */
 
+// Variable global para acumular el total
+let totalAcumulado = 0;
 
 // Arreglo de productos con nombre, cantidad de stock y precio
 const productos = [
@@ -70,12 +72,23 @@ function comprar(nombre, button) {
     const stockProducto = productoDiv.querySelector('.stock');
     const stock = parseInt(stockProducto.textContent);//de string a integer
     const cantidad = parseInt(inputCantidad);
+    const totalproducto = productoDiv.querySelector('.total');
+    const totalproductointeger = parseInt(totalproducto.textContent);//de string a integer
+
+    console.log(totalproducto)
+    console.log(totalproductointeger)
 
     console.log(inputCantidad);
     if (inputCantidad !== ''){
         if (cantidad > 0 && stock >= cantidad) {        
             stockProducto.textContent = stock - cantidad;//resto lo comprado        
             alert(`Compraste ${cantidad} unidades de ${nombre}. Quedan ${stockProducto.textContent} unidades.`);
+                        
+            totalAcumulado += totalproductointeger; // Acumular el total
+
+            // Actualizar el span con id="totaldecompra"
+            document.getElementById('totaldecompra').textContent = totalAcumulado.toFixed(2);
+
         } else if (cantidad <= 0) {
             alert('La cantidad ingresada debe ser mayor a 0.');
         } else {
