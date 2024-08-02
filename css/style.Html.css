@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header y navegador */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem; 
+    /*RM es el tamaño base de una pagina, si no se especifica, es 16*/
+    color: #ffa500; /*Color de titulo*/
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {    
+    color: white;
+    font-size: 1rem;
+}
+nav ul li a:hover {
+    color: #ffa500; /* Color de hover para los enlaces de navegación */
+}
+.listaHorizontal {
+    list-style-type: none; /* Sacar las viñetas*/
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+.listaHorizontal li {
+    display: inline; /* Mostrar la lista en línea */
+    margin-right: 10px; /* Espacio entre elementos */
+}
+
+
+.card{
+    margin: 20px;
+    height: 180px;
+    width: 110px;
+    border-radius: 5px;    
+    border: solid 0px;
+}
+.ofertas{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    
+    justify-content:space-around;
+    height:300px;
+    width: 80%;
+    border: solid 1px;    
+}
+/*como llego a determinado elemento del index, de padre a hijo a hijo*/
+.ofertas .card span{
+    font-size: larger;
+}
+section h2 {    
+    margin-left: 50px;
+}
+.historia{    
+    margin: 50px;
+}
+
+/*Estilo del footer*/
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footerContenedor h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffa500; /*Color del nombre del supermercado*/
+}
+.footerContenedor p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ccc; /*Gris del texto */
+}
+/*derechos reservados etc etc*/
+.footerAbajo {
+    background: #222;
+    color: #bbb;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.footerAbajo p {
+    margin: 0;
+    font-size: 0.9rem;
+}

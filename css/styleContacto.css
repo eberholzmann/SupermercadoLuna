@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos para el header y navegador */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffa500; /*Color de titulo*/
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+}
+nav ul li a:hover {
+    color: #ffa500; /* Color de hover para los enlaces de navegación */
+}
+.listaHorizontal {
+    list-style-type: none; /* Sacar las viñetas*/
+    padding: 0; /* Sacar el padding */
+    margin: 0; /* Sacar el margen */
+}
+.listaHorizontal li {
+    display: inline; /* Mostrar la lista en línea */
+    margin-right: 10px; /* Espacio entre elementos */
+}
+
+section{
+    margin: 50px;    
+}
+textarea {
+    width: 100%;
+}
+
+/*Estilo del footer*/
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footerContenedor h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffa500; /*Color del nombre del supermercado*/
+}
+.footerContenedor p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ccc; /*Gris del texto */
+}
+/*derechos reservados etc etc*/
+.footerAbajo {
+    background: #222;
+    color: #bbb;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.footerAbajo p {
+    margin: 0;
+    font-size: 0.9rem;
+}
